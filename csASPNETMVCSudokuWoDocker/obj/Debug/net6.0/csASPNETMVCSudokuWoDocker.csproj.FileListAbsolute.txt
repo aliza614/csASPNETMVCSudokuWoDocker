@@ -24,3 +24,5 @@ C:\Users\Owner\repos\csASPNETMVCSudokuWoDocker\csASPNETMVCSudokuWoDocker\obj\Deb
 C:\Users\Owner\repos\csASPNETMVCSudokuWoDocker\csASPNETMVCSudokuWoDocker\obj\Debug\net6.0\csASPNETMVCSudokuWoDocker.pdb
 C:\Users\Owner\repos\csASPNETMVCSudokuWoDocker\csASPNETMVCSudokuWoDocker\obj\Debug\net6.0\csASPNETMVCSudokuWoDocker.genruntimeconfig.cache
 C:\Users\Owner\repos\csASPNETMVCSudokuWoDocker\csASPNETMVCSudokuWoDocker\obj\Debug\net6.0\ref\csASPNETMVCSudokuWoDocker.dll
+C:\Users\Owner\repos\csASPNETMVCSudokuWoDocker\csASPNETMVCSudokuWoDocker\bin\Debug\net6.0\Dapper.dll
+C:\Users\Owner\repos\csASPNETMVCSudokuWoDocker\csASPNETMVCSudokuWoDocker\obj\Debug\net6.0\csASPNETMVCSudokuWoDocker.csproj.CopyComplete

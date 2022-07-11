@@ -3,7 +3,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
 {
 
 
-    public class Board
+    public class Board:IBoard
     {
         public Square[] Sudoku = new Square[81];
         public Board(string s)
@@ -12,7 +12,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
                 Sudoku[i] = new Square(1 * s[i]);
         }
 
-        public static bool checkPossible(Board board)
+        public bool CheckPossible(Board board)
         {
             bool isSolveable = true;
 
@@ -33,7 +33,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
                                 if (Works3(ConvertBoard(board), option, row, col))
                                 {
                                     board.Sudoku[row * 9 + col].Value = option;
-                                    if (checkPossible(board))
+                                    if (this.CheckPossible(board))
                                     {
                                         possible.Add(option);
                                     }
@@ -60,7 +60,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
             }
             return true;
         }
-        public static bool HasEmptyPlaces(int[][] puzzle)
+        public bool HasEmptyPlaces(int[][] puzzle)
         {
             for (int r = 0; r < puzzle.Length; r++)
             {
@@ -71,7 +71,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
             }
             return false;
         }
-        public static bool Works3(int[][] puzzle, int option, int row, int col)
+        public bool Works3(int[][] puzzle, int option, int row, int col)
         {
             if (IsInCol3(puzzle, col, option)) return false;
             if (IsInRow3(puzzle, row, option)) return false;
@@ -80,7 +80,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
             return true;
 
         }
-        public static bool IsInCol3(int[][] puzzle, int col, int option)
+        public bool IsInCol3(int[][] puzzle, int col, int option)
         {
 
             for (int r = 0; r < puzzle.Length; r++)
@@ -92,7 +92,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
             }
             return false;
         }
-        public static bool IsInRow3(int[][] puzzle, int row, int option)
+        public bool IsInRow3(int[][] puzzle, int row, int option)
         {
             for (int c = 0; c < puzzle.Length; c++)
             {
@@ -103,7 +103,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
             }
             return false;
         }
-        public static bool IsInBox3(int[][] puzzle, int row, int col, int option)
+        public bool IsInBox3(int[][] puzzle, int row, int col, int option)
         {
             int startRow = row / 3 * 3;
             int startCol = col / 3 * 3;
@@ -115,7 +115,7 @@ namespace csASPNETMVCSudokuWoDocker.Models
                         return true;
             return false;
         }
-        public static int[][] ConvertBoard(Board board)
+        public int[][] ConvertBoard(Board board)
         {
             int[][] answer = Array.Empty<int[]>();
             for (int i = 0; i < board.Sudoku.Length; i++)
