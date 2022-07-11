@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OB/zn/ql00EnBn9iR6NnaBtudEc4u9GjMDsrr0XR5e4Gi2sYbGLqQHxEL4IRRP6GgbWdTMheMt05BNmQonuohg==",
+  "dgSpecHash": "rD1DsDfIqu+YEvAx3OnMzjxvi16If/XuhZaRyxu36TVY23CzKUCDy9BqS0ppxEaqshxlxFA/hd1WFwSg8+8WFw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Owner\\repos\\csASPNETMVCSudokuWoDocker\\csASPNETMVCSudokuWoDocker\\csASPNETMVCSudokuWoDocker.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+  ],
   "logs": []
 }
